@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 360px;
+  height: 368px;
+  margin: 0 auto;
+}
+
+.logo__vector {
+  width: 36px;
+  height: 38px;
+  margin-top: 24px;
+  margin-left: 162px;
+  margin-bottom: 22px;
+  color: #0057FF;
+}
+
+.title {
+  width: 328px;
+  height: 116px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+  margin: 0 auto 24px;
+}
+
+.btn__reg {
+  width: 328px;
+  height: 52px;
+  background: #0057FF;
+  border: 1px solid #0057FF;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.btn__log {
+  width: 328px;
+  height: 52px;
+  background: #FFFFFF;
+  border: 1px solid #0057FF;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #0057FF;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 24px;
+}
+
+.pic__people {
+  width: 360px;
+  height: 160px;
+  background: url("/img/home-mob/people.png");
+}

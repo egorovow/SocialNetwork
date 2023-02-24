@@ -18,7 +18,7 @@ img {
 }
 
 .container {
-  width: 360px;
+  /*width: 360px;*/
   height: 368px;
   margin: 0 auto;
 }
@@ -26,9 +26,7 @@ img {
 .logo__vector {
   width: 36px;
   height: 38px;
-  margin-top: 24px;
-  margin-left: 162px;
-  margin-bottom: 22px;
+  margin: 24px auto 22px;
   color: #0057FF;
 }
 
@@ -44,6 +42,11 @@ img {
   margin: 0 auto 24px;
 }
 
+.btn {
+  display: flex;
+  flex-direction: column;
+}
+
 .btn__reg {
   width: 328px;
   height: 52px;
@@ -56,9 +59,7 @@ img {
   line-height: 22px;
   text-align: center;
   color: #FFFFFF;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 16px;
+  margin: 0px auto 16px;
 }
 
 .btn__log {
@@ -73,13 +74,12 @@ img {
   line-height: 22px;
   text-align: center;
   color: #0057FF;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 24px;
+  margin: 0px auto 24px;
 }
 
 .pic__people {
   width: 360px;
   height: 160px;
   background: url("/img/home-mob/people.png");
+  margin: 0px auto;
 }

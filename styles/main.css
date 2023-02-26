@@ -17,10 +17,14 @@ img {
   max-width: 100%;
 }
 
-.container {
-  /*width: 360px;*/
-  height: 368px;
+.home-mob {
+  height: 528px;
   margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo__vector {

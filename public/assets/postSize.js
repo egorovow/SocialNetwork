@@ -1,4 +1,4 @@
-function postSize(message) {
+export default function postSize(message) {
   const arr = message.split(' ');
   const arrNew = [];
   arr.forEach((el) => {

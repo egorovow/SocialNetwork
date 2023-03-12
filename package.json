@@ -1,0 +1,28 @@
+{
+  "name": "socialnetwork",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha tests",
+    "lint": "npx eslint **.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egorovow/SocialNetwork.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/egorovow/SocialNetwork/issues"
+  },
+  "homepage": "https://github.com/egorovow/SocialNetwork#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-mocha": "^10.1.0",
+    "mocha": "^10.2.0"
+  }
+}

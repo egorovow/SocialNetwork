@@ -1,3 +1,5 @@
-import calculator from './calc.js';
+import textTime from './textTime.js';
+import postSize from './postSize.js';
 
-alert(calculator(1, 3));
+console.log(textTime(4));
+console.log(postSize('Привет! https://github.com'));

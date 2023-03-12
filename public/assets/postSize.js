@@ -2,12 +2,21 @@ export default function postSize(message) {
   const arr = message.split(' ');
   const arrNew = [];
   arr.forEach((el) => {
-    if (el.slice(0, 8) === 'https://'
-        || el.slice(0, 7) === 'http://'
-        || el.slice(0, 4) === 'www.'
-        || el.slice(0, 6) === 'ftp://'
-        || el.slice(-4, -3) === '.'
-        || el.slice(-3, -2) === '.') {
+    if (el.includes('https://')
+        || el.includes('http://')
+        || el.includes('www.')
+        || el.includes('ftp://')
+        || el.includes('.com')
+        || el.includes('.org')
+        || el.includes('.net')
+        || el.includes('.uk')
+        || el.includes('.de')
+        || el.includes('.ru')
+        || el.includes('.xyz')
+        || el.includes('.info')
+        || el.includes('.ch')
+        || el.includes('.online')
+        || el.includes('.рф')) {
       arrNew.push('');
     } else { arrNew.push(el); }
   });

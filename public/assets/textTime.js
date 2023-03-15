@@ -1,8 +1,8 @@
-function textTime(numberTime) {
+export default function textTime(numberTime) {
   let str = '';
 
   // минуты
-  if (numberTime == 1) { str = `${numberTime} минуту назад`; }
+  if (numberTime === 1) { str = `${numberTime} минуту назад`; }
   if (numberTime >= 2 && numberTime <= 4) { str = `${numberTime} минуты назад`; }
   if (numberTime >= 5 && numberTime <= 59) { str = `${numberTime} минут назад`; }
 
@@ -16,14 +16,14 @@ function textTime(numberTime) {
 
   // дни
   const days = Math.floor(numberTime / 1440);
-  if (days == 1) { str = `${days} день назад`; }
+  if (days === 1) { str = `${days} день назад`; }
   if (days >= 2 && days < 5) { str = `${days} дня назад`; }
   if (days >= 5 && days < 21) { str = `${days} дней назад`; }
 
   if (days >= 21 && days < 366) {
     const lastNumbers = days % 10;
-    if (lastNumbers == 0) { str = `${days} дней назад`; }
-    if (lastNumbers == 1) { str = `${days} день назад`; }
+    if (lastNumbers === 0) { str = `${days} дней назад`; }
+    if (lastNumbers === 1) { str = `${days} день назад`; }
     if (lastNumbers >= 2 && lastNumbers < 5) { str = `${days} дня назад`; }
     if (lastNumbers >= 5 && lastNumbers < 10) { str = `${days} дней назад`; }
   }

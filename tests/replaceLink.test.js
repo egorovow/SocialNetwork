@@ -6,14 +6,14 @@ describe('Тестируем функцию замены ссылок в тек�
     assert.equal(replaceLink('Всем привет!'), 'Всем привет!');
   });
   it('с ссылкой в конце поста', function () {
-    assert.equal(replaceLink('Привет github.com'), '<a href="https://github.com">github.com</a>');
+    assert.equal(replaceLink('Привет github.com'), 'Привет <a href="https://github.com">github.com</a>');
   });
   it('с ссылкой в начале поста', function () {
-    assert.equal(replaceLink('https://github.com - сайт'), '<a href="https://github.com">github.com</a>');
+    assert.equal(replaceLink('https://github.com - сайт'), '<a href="https://github.com">github.com</a> - сайт');
   });
   it('с несколькими ссылками в посте', function () {
-    assert.equal(replaceLink('https://github.com и яндекс.рф - мои любимые сайты'), 23);
-    assert.equal(replaceLink('burtovoy.org обучающий сайт. ftp://zaicev.net'), 17);
-    assert.equal(replaceLink('яндекс.рф 1 www.ru 2 ya.ru 3 burtovoy.org 4 www.ru 5 test.online'), 15);
+    assert.equal(replaceLink('https://github.com и яндекс.рф - мои любимые сайты'), '<a href="https://github.com">github.com</a> и <a href="https://яндекс.рф">яндекс.рф</a> - мои любимые сайты');
+    assert.equal(replaceLink('burtovoy.org обучающий сайт. ftp://zaicev.net'), '<a href="https://burtovoy.org">burtovoy.org</a> обучающий сайт. <a href="https://zaicev.net">zaicev.net</a>');
+    assert.equal(replaceLink('яндекс.рф 1 www.ya.ru 2 http://burtovoy.org 3 test.online 4 яндекс.рф'), '<a href="https://яндекс.рф">яндекс.рф</a> 1 <a href="https://ya.ru">ya.ru</a> 2 <a href="https://burtovoy.org">burtovoy.org</a> 3 <a href="https://test.online">test.online</a> 4 <a href="https://яндекс.рф">яндекс.рф</a>');
   });
 });

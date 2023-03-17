@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx mocha tests",
-    "lint": "npx eslint **.js"
+    "lint": "npx eslint ."
   },
   "repository": {
     "type": "git",
